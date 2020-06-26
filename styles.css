@@ -1,0 +1,158 @@
+body {
+    background-color: #4a3f35;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+footer {
+    margin-top: 70px;
+}
+
+.heart-img {
+    width: 20px;
+    height: 20px;
+}
+
+.italian-flag {
+    width: 30px;
+    height: 20px;
+}
+
+
+.first-window, .last-window {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.circle {
+    width: 220px;
+    height: 220px;
+    background-color: #4a3f35;
+    position: absolute;
+    border: 5px solid #000;
+    border-radius: 100%;
+    z-index: 1;
+    left: 50%;
+    margin-left: -116px;
+    top: 42%;
+    margin-top: -60px;
+}
+
+.start-game-button{
+    height: 40%;
+    width: 50%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    background-color: #cb4e4e;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px #ab3c3c;
+    border: none;
+}
+
+.button-container {
+    padding-top: 40px;
+    position: relative;
+}
+
+.button {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #000;
+    border-radius: 20px;
+}
+
+.left-button {
+    margin-right: -16px;
+}
+
+.green {
+    background-color: green;
+    -webkit-border-radius:320px 20px 20px;
+    -moz-border-radius:320px 20px 20px;
+    -o-border-radius:320px 20px 20px;
+    border-radius:320px 20px 20px;
+}
+
+.red {
+    background-color: red;
+    -webkit-border-radius:20px 320px 20px 20px;
+    -moz-border-radius:20px 320px 20px 20px;
+    -o-border-radius:20px 320px 20px 20px;
+    border-radius:20px 320px 20px 20px;
+}
+
+.yellow {
+    background-color: yellow;
+    -webkit-border-radius:20px 20px 20px 320px;
+    -moz-border-radius:20px 20px 20px 320px;
+    -o-border-radius:20px 20px 20px 320px;
+    border-radius:20px 20px 20px 320px;
+}
+
+.blue {
+    background-color: blue;
+    -webkit-border-radius:20px 20px 320px 20px;
+    -moz-border-radius:20px 20px 320px 20px;
+    -o-border-radius:20px 20px 320px 20px;
+    border-radius:20px 20px 320px 20px;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.unclickable {
+    pointer-events: none;
+}
+
+.not-displayed {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px){
+    h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .start-game-button {
+        font-size: 1.5rem;
+        height: 20%;
+    }
+
+    .button {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+        margin: -37px 0 0 -81px
+    }
+
+    .current-score, .high-score{
+        font-size: 0.5rem;
+    }
+}
